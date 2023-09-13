@@ -6,186 +6,207 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="130dp"
-        android:layout_height="73dp"
-        android:layout_marginEnd="281dp"
-        android:layout_marginBottom="530dp"
-        android:gravity="center"
-        android:text="@string/welcome"
-        android:textSize="20sp"
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="17dp"
+        android:textColorHint="#BAB6B6"
+        android:layout_marginBottom="536dp"
+        android:hint="@string/enter_your_name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="486dp"
+        android:hint="@string/enter_your_phone_number"
+        android:textColorHint="#BAB6B6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="438dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone">
+
+        <RadioButton
+            android:id="@+id/cheese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cheese">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/two_cheese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/_2x_cheese">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/none">
+
+        </RadioButton>
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="398dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup">
+
+        <RadioButton
+            android:id="@+id/square"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/square">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/round"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:text="@string/round">
+
+        </RadioButton>
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/pepperoni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="315dp"
+        android:layout_marginBottom="366dp"
+        android:text="@string/pepperoni"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+    <CheckBox
+        android:id="@+id/mushroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="204dp"
+        android:layout_marginBottom="366dp"
+        android:text="@string/mushroom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pepperoni"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/veggies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="366dp"
+        android:text="@string/veggies"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mushroom"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="267dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginBottom="463dp"
-        android:gravity="end"
-        android:text="@string/please_give_generously"
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="286dp"
+        android:layout_marginBottom="331dp"
+        android:text="@string/your_ordering"
         android:textColor="#BAB6B6"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <RadioGroup
-        android:id="@+id/group"
-        android:layout_width="293dp"
-        android:layout_height="115dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="118dp"
-        android:layout_marginBottom="315dp"
-        android:paddingStart="12dp"
-        android:paddingEnd="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
-
-        <RadioButton
-            android:id="@+id/radioButton"
-            android:layout_width="match_parent"
-            android:layout_height="57dp"
-            android:text="@string/paypal" />
-
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="128dp"
-            android:layout_height="61dp"
-            android:text="@string/direct" />
-    </RadioGroup>
-
-    <NumberPicker
-        android:id="@+id/numpick"
-        android:layout_width="91dp"
-        android:layout_height="216dp"
-        android:layout_gravity="end"
-        android:layout_marginTop="152dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginBottom="235dp"
-        android:backgroundTint="@android:color/holo_blue_light"
-        android:theme="@style/NumberPickerTheme"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/group"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </NumberPicker>
-
-    <ProgressBar
-        android:id="@+id/progressBar9"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="234dp"
-        android:layout_height="105dp"
-        android:layout_gravity="center"
-        android:layout_marginStart="88dp"
-        android:layout_marginEnd="89dp"
-        android:layout_marginBottom="130dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numpick" />
+        app:layout_constraintTop_toBottomOf="@+id/pepperoni" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="150dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginEnd="226dp"
-        android:layout_marginBottom="81dp"
-        android:gravity="center"
-        android:text="@string/amount"
-        android:textColor="#BAB6B6"
-        android:textSize="22sp"
+        android:id="@+id/textView5"
+        android:layout_width="372dp"
+        android:layout_height="243dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="58dp"
+        android:background="@color/grey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar9" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
 
-    <EditText
-        android:id="@+id/amountDonate"
-        android:layout_width="219dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginBottom="83dp"
-        android:backgroundTint="@android:color/holo_blue_light"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar9">
-
-    </EditText>
+    </TextView>
 
     <Button
-        android:id="@+id/donateButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginBottom="34dp"
-        android:text="@string/donate"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/exit"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/total"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3">
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.888">
 
     </Button>
-
-    <TextView
-        android:id="@+id/total"
-        android:layout_width="117dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="33dp"
-        android:gravity="center"
-        android:text="@string/total_so_far"
-        android:textColor="#BAB6B6"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/totalDonated"
-        app:layout_constraintStart_toEndOf="@+id/donateButton"
-        app:layout_constraintTop_toBottomOf="@+id/textView3">
-
-    </TextView>
-
-    <TextView
-        android:id="@+id/totalDonated"
-        android:layout_width="87dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="18dp"
-        android:layout_marginBottom="34dp"
-        android:gravity="center"
-        android:textColor="#BAB6B6"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/emailButton"
-        app:layout_constraintStart_toEndOf="@+id/total"
-        app:layout_constraintTop_toBottomOf="@+id/amountDonate">
-
-    </TextView>
 
     <Button
-        android:id="@+id/emailButton"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginBottom="2dp"
-        android:background="@drawable/round_button"
-        android:backgroundTint="@android:color/holo_blue_dark"
-        android:text="@string/mail"
-        android:textSize="30sp"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="13dp"
+        android:text="@string/sms_place_your_order"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/totalDonated"
-        app:layout_constraintTop_toBottomOf="@+id/amountDonate">
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="1.0">
 
     </Button>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -37,24 +37,16 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
         if (id == R.id.relative) {
             setContentView(R.layout.relative);
-            numberPicker = findViewById(R.id.numpick);
-            numberPicker.setMinValue(0);
-            numberPicker.setMaxValue(1000);
+
         } else if (id == R.id.linear) {
             setContentView(R.layout.linear);
-            numberPicker = findViewById(R.id.numpick);
-            numberPicker.setMinValue(0);
-            numberPicker.setMaxValue(1000);
+
         } else if (id == R.id.table) {
             setContentView(R.layout.table);
-            numberPicker = findViewById(R.id.numpick);
-            numberPicker.setMinValue(0);
-            numberPicker.setMaxValue(1000);
+
         } else if (id == R.id.constraint) {
             setContentView(R.layout.constraint);
-            numberPicker = findViewById(R.id.numpick);
-            numberPicker.setMinValue(0);
-            numberPicker.setMaxValue(1000);
+
         }
         return super.onOptionsItemSelected(item);
     }

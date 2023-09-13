@@ -5,130 +5,145 @@
     android:orientation="vertical"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="130dp"
-        android:layout_height="73dp"
-        android:gravity="center"
-        android:text="@string/welcome"
-        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:textColorHint="#BAB6B6"
+        android:hint="@string/enter_your_name"/>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:hint="@string/enter_your_phone_number"
+        android:textColorHint="#BAB6B6" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/cheese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cheese">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/two_cheese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/_2x_cheese">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/none">
+
+        </RadioButton>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/square"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/square">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/round"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:text="@string/round">
+
+        </RadioButton>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/pepperoni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pepperoni" />
+
+        <CheckBox
+            android:id="@+id/mushroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:text="@string/mushroom">
+
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/veggies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:text="@string/veggies" />
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="267dp"
-        android:layout_height="50dp"
-        android:gravity="end"
-        android:text="@string/please_give_generously"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/your_ordering"
         android:textColor="#BAB6B6"
         android:textSize="20sp" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <RadioGroup
-            android:id="@+id/group"
-            android:layout_width="293dp"
-            android:layout_height="115dp"
-            android:paddingStart="12dp"
-            android:paddingEnd="20dp">
+    <TextView
+        android:layout_width="370dp"
+        android:layout_height="273dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/grey">
 
-            <RadioButton
-                android:id="@+id/radioButton"
-                android:layout_width="match_parent"
-                android:layout_height="57dp"
-                android:text="@string/paypal" />
-
-            <RadioButton
-                android:id="@+id/radioButton2"
-                android:layout_width="128dp"
-                android:layout_height="61dp"
-                android:text="@string/direct" />
-        </RadioGroup>
-
-        <NumberPicker
-            android:id="@+id/numpick"
-            android:layout_width="91dp"
-            android:layout_height="216dp"
-            android:layout_gravity="end"
-            android:backgroundTint="@android:color/holo_blue_light"
-            android:theme="@style/NumberPickerTheme">
-
-        </NumberPicker>
-
-    </LinearLayout>
-
-    <ProgressBar
-        android:id="@+id/progressBar9"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_gravity="center"
-        android:layout_width="234dp"
-        android:layout_height="105dp" />
+    </TextView>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="150dp"
-            android:layout_height="49dp"
-            android:gravity="center"
-            android:text="@string/amount"
-            android:textColor="#BAB6B6"
-            android:textSize="22sp" />
-        <EditText
-            android:id="@+id/amountDonate"
-            android:inputType="number"
-            android:layout_width="258dp"
-            android:layout_height="48dp"
-            android:backgroundTint="@android:color/holo_blue_light">
-        </EditText>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/donateButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="50sp"
-            android:text = "@string/donate">
+            android:text="@string/exit"
+            android:layout_marginStart="20dp">
+
         </Button>
 
-        <TextView
-            android:id="@+id/total"
-            android:layout_width="132dp"
-            android:layout_height="47dp"
-            android:gravity="center"
-            android:text="@string/total_so_far"
-            android:textColor="#BAB6B6"
-            android:textSize="16sp">
-        </TextView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sms_place_your_order"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="95dp">
 
-        <TextView
-            android:id="@+id/totalDonated"
-            android:layout_width="87dp"
-            android:layout_height="47dp"
-            android:gravity="center"
-            android:textColor="#BAB6B6">
-        </TextView>
+        </Button>
     </LinearLayout>
 
-    <Button
-        android:id="@+id/emailButton"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/round_button"
-        android:backgroundTint="@android:color/holo_blue_dark"
-        android:layout_marginStart="300sp"
-        android:text="@string/mail"
-        android:textSize="30sp">
-
-    </Button>
 </LinearLayout>

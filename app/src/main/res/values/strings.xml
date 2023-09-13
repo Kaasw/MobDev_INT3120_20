@@ -1,17 +1,23 @@
 <resources>
-    <string name="app_name">Week2-1</string>
+    <string name="app_name">Week2-2</string>
     <color name="green">#1B5E20</color>
     <string name="table_layout">Table Layout</string>
     <string name="relative_layout">Relative Layout</string>
     <string name="linear_layout">Linear Layout</string>
     <string name="constraint_layout">Constraint Layout</string>
-    <string name="total_so_far">Total so far</string>
-    <string name="donate">Donate</string>
-    <string name="amount">Amount</string>
-    <string name="direct">Direct</string>
-    <string name="paypal">Paypal</string>
-    <string name="please_give_generously">Please give generously</string>
-    <string name="welcome">Welcome</string>
-    <string name="mail">📧</string>
-    <string name="check_menu_items_for_different_layout">Check menu items for different layout</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_your_phone_number">Enter your phone number</string>
+    <string name="cheese">Cheese</string>
+    <string name="_2x_cheese">2x cheese</string>
+    <string name="none">None</string>
+    <string name="square">Square</string>
+    <string name="round">Round</string>
+    <string name="pepperoni">Pepperoni</string>
+    <string name="mushroom">Mushroom</string>
+    <string name="veggies">Veggies</string>
+    <string name="your_ordering">Your ordering:</string>
+    <string name="check_menu_for_different_layout">Check menu for different layout</string>
+    <string name="exit">Exit</string>
+    <string name="sms_place_your_order">SMS-Place your order</string>
+
 </resources>
