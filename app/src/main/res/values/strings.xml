@@ -19,5 +19,8 @@
     <string name="check_menu_for_different_layout">Check menu for different layout</string>
     <string name="exit">Exit</string>
     <string name="sms_place_your_order">SMS-Place your order</string>
+    <string name="click_for_layouts">Click for layouts</string>
+    <string name="home">Home</string>
+    <string name="popup_menu">Popup Menu</string>
 
 </resources>
