@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Content Provider 2</string>
+    <string name="load_data_from_content_provider">Load data from content provider</string>
+    <string name="load">Load</string>
+</resources>

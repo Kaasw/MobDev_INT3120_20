@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">sharedPreference</string>
+    <string name="saved_text_here">Saved Text Here</string>
+    <string name="put_text_here">Put text here</string>
+</resources>

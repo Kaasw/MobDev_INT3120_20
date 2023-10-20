@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/constraint"
+        android:title="@string/constraint_layout">
+    </item>
+
+    <item
+        android:id="@+id/linear"
+        android:title="@string/linear_layout">
+    </item>
+
+    <item
+        android:id="@+id/relative"
+        android:title="@string/relative_layout">
+    </item>
+
+    <item
+        android:id="@+id/table"
+        android:title="@string/table_layout">
+    </item>
+
+</menu>

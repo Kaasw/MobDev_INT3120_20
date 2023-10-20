@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="130dp"
+        android:layout_height="73dp"
+        android:gravity="center"
+        android:text="@string/welcome"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="267dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView"
+        android:gravity="end"
+        android:text="@string/please_give_generously"
+        android:textColor="#BAB6B6"
+        android:minHeight="48dp"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="293dp"
+        android:layout_height="115dp"
+        android:layout_below="@+id/textView2"
+        android:paddingStart="12dp"
+        android:paddingEnd="20dp"
+        >
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:text="@string/paypal" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="128dp"
+            android:layout_height="61dp"
+            android:text="@string/direct" />
+    </RadioGroup>
+
+    <NumberPicker
+        android:id="@+id/numpick"
+        android:layout_width="wrap_content"
+        android:layout_height="213dp"
+        android:layout_below="@id/textView2"
+        android:layout_toEndOf="@+id/group"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:theme="@style/NumberPickerTheme">
+
+    </NumberPicker>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="234dp"
+        android:layout_height="105dp"
+        android:layout_below="@id/numpick"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="150dp"
+        android:layout_height="49dp"
+        android:layout_below="@+id/progressBar"
+        android:gravity="center"
+        android:text="@string/amount"
+        android:textColor="#BAB6B6"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/amountDonate"
+        android:inputType="number"
+        android:layout_width="258dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/progressBar"
+        android:layout_toEndOf="@+id/textView3"
+        android:backgroundTint="@android:color/holo_blue_light">
+    </EditText>
+
+    <Button
+        android:id="@+id/donateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3"
+        android:text = "@string/donate">
+    </Button>
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="132dp"
+        android:layout_height="47dp"
+        android:layout_below="@+id/amountDonate"
+        android:layout_toEndOf="@+id/donateButton"
+        android:gravity="center"
+        android:text="@string/total_so_far"
+        android:textColor="#BAB6B6"
+        android:textSize="16sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/totalDonated"
+        android:layout_width="87dp"
+        android:layout_height="47dp"
+        android:layout_below="@+id/amountDonate"
+        android:layout_toEndOf="@+id/total"
+        android:gravity="center"
+        android:textColor="#BAB6B6">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/emailButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/totalDonated"
+        android:layout_alignStart="@+id/totalDonated"
+        android:background="@drawable/round_button"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:text="@string/mail"
+        android:textSize="30sp">
+
+    </Button>
+</RelativeLayout>
+
+

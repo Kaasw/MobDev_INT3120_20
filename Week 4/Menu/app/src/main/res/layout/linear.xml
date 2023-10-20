@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:textColorHint="#BAB6B6"
+        android:hint="@string/enter_your_name"/>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:hint="@string/enter_your_phone_number"
+        android:textColorHint="#BAB6B6" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/cheese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cheese">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/two_cheese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/_2x_cheese">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/none">
+
+        </RadioButton>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/square"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/square">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/round"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:text="@string/round">
+
+        </RadioButton>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/pepperoni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pepperoni" />
+
+        <CheckBox
+            android:id="@+id/mushroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:text="@string/mushroom">
+
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/veggies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:text="@string/veggies" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/your_ordering"
+        android:textColor="#BAB6B6"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="370dp"
+        android:layout_height="273dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/grey">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exit"
+            android:layout_marginStart="20dp">
+
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sms_place_your_order"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="95dp">
+
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

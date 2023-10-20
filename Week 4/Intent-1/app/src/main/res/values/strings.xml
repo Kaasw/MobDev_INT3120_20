@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Slide7</string>
+    <string name="full_name">Full name</string>
+    <string name="send_messages_to_greeting_activity">Send messages to greeting activity</string>
+    <string name="this_is_feedback">This is feedback</string>
+    <string name="feedback_from_greeting_activity">Feedback from greeting activity</string>
+    <string name="messages_sent_from_activity">Messages sent from activity</string>
+    <string name="messages">((Messages))</string>
+    <string name="back">Back</string>
+</resources>

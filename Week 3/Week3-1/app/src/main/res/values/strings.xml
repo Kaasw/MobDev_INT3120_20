@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Week2-1</string>
+    <color name="green">#1B5E20</color>
+    <string name="table_layout">Table Layout</string>
+    <string name="relative_layout">Relative Layout</string>
+    <string name="linear_layout">Linear Layout</string>
+    <string name="constraint_layout">Constraint Layout</string>
+    <string name="total_so_far">Total so far</string>
+    <string name="donate">Donate</string>
+    <string name="amount">Amount</string>
+    <string name="direct">Direct</string>
+    <string name="paypal">Paypal</string>
+    <string name="please_give_generously">Please give generously</string>
+    <string name="welcome">Welcome</string>
+    <string name="mail">📧</string>
+    <string name="check_menu_items_for_different_layout">Check menu items for different layout</string>
+</resources>

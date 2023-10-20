@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="130dp"
+        android:layout_height="73dp"
+        android:layout_marginEnd="281dp"
+        android:layout_marginBottom="530dp"
+        android:gravity="center"
+        android:text="@string/welcome"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="267dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="463dp"
+        android:gravity="end"
+        android:text="@string/please_give_generously"
+        android:textColor="#BAB6B6"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="293dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="315dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:text="@string/paypal" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="128dp"
+            android:layout_height="61dp"
+            android:text="@string/direct" />
+    </RadioGroup>
+
+    <NumberPicker
+        android:id="@+id/numpick"
+        android:layout_width="91dp"
+        android:layout_height="216dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="235dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:theme="@style/NumberPickerTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/group"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </NumberPicker>
+
+    <ProgressBar
+        android:id="@+id/progressBar9"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="234dp"
+        android:layout_height="105dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="88dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginBottom="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numpick" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="150dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="226dp"
+        android:layout_marginBottom="81dp"
+        android:gravity="center"
+        android:text="@string/amount"
+        android:textColor="#BAB6B6"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar9" />
+
+    <EditText
+        android:id="@+id/amountDonate"
+        android:layout_width="219dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="83dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar9">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/donateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="34dp"
+        android:text="@string/donate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/total"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="117dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="33dp"
+        android:gravity="center"
+        android:text="@string/total_so_far"
+        android:textColor="#BAB6B6"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/totalDonated"
+        app:layout_constraintStart_toEndOf="@+id/donateButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/totalDonated"
+        android:layout_width="87dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="34dp"
+        android:gravity="center"
+        android:textColor="#BAB6B6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/emailButton"
+        app:layout_constraintStart_toEndOf="@+id/total"
+        app:layout_constraintTop_toBottomOf="@+id/amountDonate">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/emailButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/round_button"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:text="@string/mail"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/totalDonated"
+        app:layout_constraintTop_toBottomOf="@+id/amountDonate">
+
+    </Button>
+</androidx.constraintlayout.widget.ConstraintLayout>
