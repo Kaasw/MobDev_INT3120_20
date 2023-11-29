@@ -2,6 +2,7 @@ package com.example.broadcastreceiver;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.bluetooth.BluetoothAdapter;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        IntentFilter filter = new IntentFilter(Intent.ACTION_AIRPLANE_MODE_CHANGED);
+        IntentFilter filter = new IntentFilter(BluetoothAdapter.ACTION_STATE_CHANGED);
         registerReceiver(airplaneChange, filter);
     }
 

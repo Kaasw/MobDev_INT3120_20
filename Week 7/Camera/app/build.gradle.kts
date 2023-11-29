@@ -16,6 +16,10 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    packagingOptions {
+        resources.excludes.add("META-INF/*")
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -32,7 +36,12 @@ android {
 }
 
 dependencies {
-
+    implementation(platform("com.squareup.okhttp3:okhttp-bom:4.11.0"))
+    implementation ("com.loopj.android:android-async-http:1.4.11")
+    implementation ("org.asynchttpclient:async-http-client:3.0.0.Beta3")
+    // define any required OkHttp artifacts without version
+    implementation("com.squareup.okhttp3:okhttp")
+    implementation("com.squareup.okhttp3:logging-interceptor")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")

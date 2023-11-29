@@ -1,24 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
 
-    <!-- add Camera Button to open the Camera -->
+    <!--Button to open the image selector-->
     <Button
-        android:id="@+id/camera"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="130dp"
-        android:text="Camera" />
+        android:id="@+id/BSelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="SELECT IMAGE"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 
-    <!-- add ImageView to display the captured image -->
+    <!--ImageView to preview the selected image-->
     <ImageView
-        android:id="@+id/img"
-        android:layout_width="341dp"
-        android:layout_height="615dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginBottom="10dp" />
+        android:id="@+id/IVPreviewImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/BSelectImage"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <TextView
+        android:id="@+id/nutrition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IVPreviewImage">
+
+    </TextView>
+
 </RelativeLayout>
